@@ -13,14 +13,10 @@ public class MediaTest {
 	
 	@Test
 	void test() {
-		Audio audio = new Audio();
-		VideoStream videoStream = new VideoStream();
-		VideoFile videoFile = new VideoFile();
-		Adaptador adaptador = new Adaptador(videoStream);
-		
-		this.mediaPlayer.addMedia(audio);
-		this.mediaPlayer.addMedia(videoFile);
-		this.mediaPlayer.addMedia(adaptador);
+
+		this.mediaPlayer.addMedia(new Audio());
+		this.mediaPlayer.addMedia(new VideoFile());
+		this.mediaPlayer.addMedia(new Adaptador(new VideoStream()));
 		
 		this.mediaPlayer.reproducir();
 	

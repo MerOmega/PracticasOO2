@@ -1,6 +1,6 @@
 package ar.edu.unlp.info.oo2.ejercicio_3;
 
-public class Adaptador extends Media{
+public class Adaptador implements Media{
 	
 	private VideoStream videoStream;
 	

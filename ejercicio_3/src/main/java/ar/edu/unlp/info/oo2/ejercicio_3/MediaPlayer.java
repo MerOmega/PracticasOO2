@@ -15,7 +15,7 @@ public class MediaPlayer {
 	}
 	
 	public void reproducir() {
-		media.stream()
+		media
 		.forEach(m -> System.out.println(m.play()));
 	}
 }
